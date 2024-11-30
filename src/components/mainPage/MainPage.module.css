@@ -1,0 +1,108 @@
+/* HEADING */
+
+.heading {
+  color: var(--blue7d);
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: var(--blue7d);
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.header2 {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+/* CARDS */
+
+.card {
+  position: relative;
+  width: 150px;
+  height: 85px;
+  background-color: beige;
+  border-radius: 0.5rem;
+}
+.card_date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--blue7d);
+  font-size: 0.5rem;
+  color: white;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0 0.5rem 0 0.5rem;
+}
+
+.card_desc {
+  background-color: white;
+  font-size: 0.5rem;
+  position: absolute;
+  padding: 0.2rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  bottom: 0;
+}
+
+.list_num {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.active {
+  width: 24px;
+  height: 24px;
+  background-color: var(--blue7d);
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+}
+
+.arrow_icn {
+  font-size: 1rem;
+}
+
+/* ACCESSIBILITY CONTAINER */
+
+.accessibility_cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.accessibility_blocks {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  padding: 1rem;
+}
+.accessibility_blocks > div {
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: var(--blue7d);
+  padding: 0.5rem;
+  color: white;
+}
+
+/* FOOTER */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--blue7d);
+  width: 100%;
+  height: 100px;
+}
