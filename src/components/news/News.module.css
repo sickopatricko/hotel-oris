@@ -1,0 +1,131 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0rem 1rem;
+}
+
+.heading {
+  color: var(--blue7d);
+  font-weight: 600;
+  /* padding: 1rem; */
+  font-size: 1.5rem;
+}
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+
+  grid-template-rows: auto auto;
+  grid-auto-flow: column;
+  /* overflow-x: scroll; */
+  gap: 0.5rem;
+  height: 178px;
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* CONTROLS */
+
+.controls {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.25rem;
+}
+
+.controls_pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 0.25rem; */
+}
+
+.controls_pagination_btn {
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1rem;
+  /* padding: 0.25rem; */
+  color: #000;
+}
+
+.active {
+  background-color: var(--blue7d);
+  color: #fff;
+}
+
+.controls_icon {
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+
+  background-color: var(--blue7d);
+  color: #fff;
+}
+
+/* CARD */
+
+.card {
+  position: relative;
+  width: calc(50vw - 1rem - 0.25rem);
+  max-width: 300px;
+  height: 85px;
+  background-color: beige;
+  border-radius: 0.5rem;
+
+  z-index: 10;
+}
+
+.card_bg {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.card_date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--blue7d);
+  font-size: 0.5rem;
+  color: white;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0rem 0.5rem 0rem 0.5rem;
+
+  z-index: 12;
+}
+
+.card_desc {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 0.5rem;
+  position: absolute;
+  padding: 0.2rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+
+  z-index: 11;
+}

@@ -3,3 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.black_primary {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.black_alt {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.black_orange {
+  background-color: #000;
+  color: #ffa500;
+}
+
+.orange_black {
+  background-color: #ffa500;
+  color: #000;
+}
