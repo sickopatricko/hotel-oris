@@ -1,11 +1,5 @@
 /* HEADING */
 
-.heading {
-  color: var(--blue7d);
-  padding: 1rem;
-  font-size: 1.5rem;
-}
-
 .header {
   width: 100%;
   height: 100%;
@@ -94,15 +88,14 @@
   border-radius: 0.5rem;
   background-color: var(--blue7d);
   padding: 0.5rem;
+}
+.accessibility_blocks > div > a {
   color: white;
 }
 
-/* FOOTER */
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  background-color: var(--blue7d);
-  width: 100%;
-  height: 100px;
+/* ACCESSIBLITY HEADING */
+.mainPage_heading {
+  color: var(--blue7d);
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
 }

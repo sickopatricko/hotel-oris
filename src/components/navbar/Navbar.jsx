@@ -37,7 +37,11 @@ const Navbar = () => {
                 icon={faMagnifyingGlass}
                 className={styles.search_icn}
               />
-              <input type="text" placeholder="Wyszukaj frazę" />
+              <input
+                type="text"
+                placeholder="Wyszukaj frazę"
+                aria-label="Wyszukaj frazę"
+              />
             </span>
             <ul className={styles.menu_list}>
               <li>

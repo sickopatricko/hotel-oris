@@ -2,6 +2,9 @@ import Navbar from "../navbar/Navbar";
 import styles from "./MainPage.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Heading from "../heading/Heading";
+import Footer from "../footer/Footer";
+
 const MainPage = () => {
   const data = [
     {
@@ -11,21 +14,43 @@ const MainPage = () => {
     },
     {
       paragraph:
-        " Bezpłatna rehabilitacja dla mieszkańców kujawsko-pomorskiego",
-      date: "30.0.2024",
+        "Bezpłatne badania wzroku dla seniorów w województwie pomorskim",
+      date: "04.12.2024",
     },
     {
       paragraph:
-        " Bezpłatna rehabilitacja dla mieszkańców kujawsko-pomorskiego",
-      date: "30.0.2024",
+        "Warsztaty z zarządzania budżetem domowym dla młodzieży w dolnośląskim",
+      date: "05.12.2024",
     },
+    // {
+    //   paragraph: "Program wsparcia dla przedsiębiorców w podlaskim",
+    //   date: "06.12.2024",
+    // },
+    // {
+    //   paragraph: "Kampania edukacyjna na temat zdrowego odżywiania w opolskim",
+    //   date: "07.12.2024",
+    // },
+    // {
+    //   paragraph:
+    //     "Bezpłatne szczepienia przeciw grypie dla mieszkańców wielkopolskiego",
+    //   date: "08.12.2024",
+    // },
+    // {
+    //   paragraph: "Nowe miejsca w przedszkolach publicznych w mazowieckim",
+    //   date: "09.12.2024",
+    // },
+    // {
+    //   paragraph:
+    //     "Wsparcie dla rodzin wielodzietnych w województwie zachodniopomorskim",
+    //   date: "10.12.2024",
+    // },
   ];
 
   return (
     <section className={styles.container}>
       <Navbar />
       <main className={styles.main}>
-        <h2 className={styles.heading}>Aktualności</h2>
+        <Heading>Aktulaności</Heading>
         <section className={styles.header}>
           {data.map((e, idx) => (
             <div className={styles.card} key={idx}>
@@ -55,14 +80,26 @@ const MainPage = () => {
         </div>
 
         <section className={styles.accessibility_cont}>
-          <p>Dostępność</p>
+          <h2 className={styles.mainPage_heading}>Dostępność</h2>
           <div className={styles.accessibility_blocks}>
-            <div>Dokumenty do pobrania</div>
-            <div>Link</div>
+            <div>
+              <a href="" aria-label="Dokumenty do pobrania">
+                Dokumenty do pobrania
+              </a>
+            </div>
+            <div>
+              <a href="" aria-label="Linki">
+                Linki
+              </a>
+            </div>
           </div>
         </section>
+
+        <h2 className={styles.mainPage_heading}>
+          Wspomagane Społeczności Mieszkaniowe
+        </h2>
       </main>
-      <footer className={styles.footer}></footer>
+      <Footer />
     </section>
   );
 };
