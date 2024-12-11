@@ -1,0 +1,150 @@
+.container {
+  width: 100%;
+  max-width: 1920px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  gap: 0.5rem;
+}
+
+.travel_section {
+  /* background-color: lightblue; */
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+
+.travel {
+  /* background-color: seagreen; */
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+
+  font-size: 0.875rem;
+}
+
+.travel_heading {
+  width: 100%;
+  height: 35px;
+
+  background-color: var(--blue7d);
+  color: #fff;
+
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+
+  font-size: inherit;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.travel_ways_cont {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.travel_way {
+  display: flex;
+  flex-direction: column;
+}
+
+.travel_type {
+  color: #000;
+  font-size: inherit;
+}
+
+.travel_type_numbers {
+  font-weight: 600;
+}
+
+.travel_wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.travel_step {
+  display: flex;
+  flex-direction: column;
+}
+
+.travel_step_subheading {
+  color: #000;
+  font-size: inherit;
+  text-align: left;
+  text-transform: lowercase;
+  font-weight: 600;
+}
+
+.travel_place {
+  height: 40px;
+
+  color: #000;
+  font-size: inherit;
+  text-align: left;
+  text-transform: capitalize;
+  white-space: nowrap;
+
+  border: 2px solid var(--blue7d);
+  border-radius: 0.375rem;
+  background-color: #fff;
+  font-weight: 500;
+
+  padding: 0.5rem;
+}
+
+.travel_stops {
+  color: #000;
+  font-size: inherit;
+  text-align: left;
+  text-transform: lowercase;
+
+  white-space: nowrap;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 40px;
+}
+
+@media only screen and (min-width: 600px) {
+  .travel_wrapper {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+
+  .travel_place,
+  .travel_stops {
+    height: 50px;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .travel {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .travel {
+    font-size: 1.25rem;
+  }
+
+  .travel_heading {
+    height: 44px;
+  }
+}

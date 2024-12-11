@@ -65,7 +65,7 @@ const MainPage = () => {
           </div>
         </section>
       </main>
-      <footer className={styles.footer}></footer>
+      {/* <footer className={styles.footer}></footer> */}
     </section>
   );
 };
