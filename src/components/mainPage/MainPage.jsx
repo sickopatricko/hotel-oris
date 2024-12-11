@@ -99,7 +99,7 @@ const MainPage = () => {
           Wspomagane Społeczności Mieszkaniowe
         </h2>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </section>
   );
 };
