@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./News.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -172,7 +172,8 @@ const News = () => {
     },
   ];
 
-  const itemsPerPage = 4;
+  const [itemsPerPage, setItemsPerPage] = useState(2);
+
   const maxPages = Math.min(5, Math.ceil(data.length / itemsPerPage));
   const [currentPage, setCurrentPage] = useState(0);
 
@@ -192,6 +193,26 @@ const News = () => {
 
   const startIndex = currentPage * itemsPerPage;
   const visibleItems = data.slice(startIndex, startIndex + itemsPerPage);
+
+  useEffect(() => {
+    const handleItemsPerPage = () => {
+      window.innerWidth < 600
+        ? setItemsPerPage(2)
+        : window.innerWidth < 1280
+        ? setItemsPerPage(4)
+        : setItemsPerPage(8);
+    };
+
+    handleItemsPerPage();
+
+    window.addEventListener("resize", handleItemsPerPage);
+
+    return () => window.removeEventListener("resize", handleItemsPerPage);
+  }, []);
+
+  // useEffect(() => {
+  //   handleItemsPerPage();
+  // }, []);
 
   return (
     <section className={styles.container}>

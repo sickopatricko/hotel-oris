@@ -1,0 +1,25 @@
+.heading {
+  width: 100%;
+  color: var(--blue7d);
+  font-size: 1.5rem;
+}
+
+.header_section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  padding: 1rem;
+}
+
+.ad_logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+.ad_logos > img {
+  width: 20%;
+  object-fit: contain;
+}
