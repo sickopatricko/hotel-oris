@@ -55,3 +55,21 @@
   font-weight: 600;
   text-decoration: underline;
 }
+
+/* MEDIA QURIES - DEKSTOP */
+
+@media (min-width: 768px) {
+  .about_us_cont {
+    flex-direction: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .about_us_cont > img {
+    width: 30%;
+    height: 10%;
+  }
+  .description > p {
+    font-size: 1.2rem;
+  }
+}

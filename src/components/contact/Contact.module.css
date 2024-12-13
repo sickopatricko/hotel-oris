@@ -64,3 +64,30 @@
   justify-self: center;
   align-items: center;
 }
+
+/* Styles for desktop */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: flex;
+    gap: 2rem;
+  }
+
+  .info_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+  }
+
+  .phone_info {
+    order: 1;
+  }
+  .mail_info {
+    order: 3;
+  }
+  .loc_info {
+    order: 2;
+  }
+  .maps_section {
+    order: 4;
+  }
+}
