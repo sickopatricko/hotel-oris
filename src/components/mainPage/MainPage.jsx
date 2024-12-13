@@ -52,7 +52,6 @@ const MainPage = () => {
     <section className={styles.container}>
       {/* <Navbar /> */}
       <main className={styles.main}>
-        <News />
         {/*
         <h2 className={styles.heading}>Aktualności</h2>
          <section className={styles.header}>
